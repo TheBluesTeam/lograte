@@ -1,0 +1,17 @@
+#cat /etc lograte.conf
+
+/var/log/ {
+        daily
+        create 0664 root root
+        rotate 4
+        compress
+}
+
+
+#lograte -f /etc/lograte.conf
+#monthly : 월 단위
+#daily : 일 단위
+#weekly : 주 단위
+#maxsize :최대사이즈
+#minsize : 최소사이즈
+#nocompress : 압축
